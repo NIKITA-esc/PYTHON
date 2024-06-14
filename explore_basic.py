@@ -37,9 +37,10 @@ print (a | b) # a or b
 print(a ^ b) # XOR between two integers
 print(a>>2 , b>>2) # right shift of a and  by 2
 print(a<<2 , b<<2) # left shift of a and b by 2
+print(bin(a)[2:])
 
 # input statement
-name = str(input ("Enter your full name here : "))
+'''name = str(input ("Enter your full name here : "))
 try:
     rank = int(input ("Enter your rank of JEE MAINS 2024: "))
     if rank < 40000:
@@ -47,7 +48,20 @@ try:
     else:
         print("Sorry, you can't grab a seat this year. But don't be sad , it is not the end of life. Give yourself one more chance.")
 except ValueError:
-    print(f"INVALID INPUT!! check {name}, again")
+    print(f"INVALID INPUT!! check {name}, again")'''
+
+# bits
+a = 23 #0b100111
+b = 12 #0b1100
+def no_counts(n):
+    return bin(n).count('1')
+print(no_counts(a))
+print(no_counts(b))
+def flip_bits(a,b):
+    c = a ^ b
+    return bin(c).count('1')
+print(flip_bits(2 , 5))
+
 
 
 
