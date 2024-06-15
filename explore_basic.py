@@ -57,14 +57,22 @@ def no_counts(n):
     return bin(n).count('1')
 print(no_counts(a))
 print(no_counts(b))
-def flip_bits(a,b):
+
+def flip_bits(a,b): # bits needed to convert a to b
     c = a ^ b
     return bin(c).count('1')
 print(flip_bits(2 , 5))
 
-
-
-
+# list methods
+list = ['cady', '12', 'medical', '98']
+print(list.append('mary')) # returns none but modifies the list
+print(list.remove("mary")) # returns none but modifies the list
+#print(list.clear())        # returns none but modifies the list
+print(list.pop())
+print(list.insert(1,"john"))
+print(list.insert(2, "mary"))
+print(len(list))
+print(list)
 
 
 
