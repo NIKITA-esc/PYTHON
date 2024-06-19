@@ -214,16 +214,18 @@ for num in a :
     count+=num
 print(count)
 
+# os module
+import os
+print(os.getcwd())
+print(os.listdir())
+os.mkdir("New")
+print(os.getcwd())
+file_exist = os.path.exists("calculator.py")
+print(file_exist)
+print(os.listdir())
 
-def leap_year(year):
-    if year % 4 == 0 and year % 400 == 0:
-        return"leap  year"
-    else:
-        return "not a leap  year"
-print(leap_year(2020))
-
-
-
+os.chdir("New")
+print(os.getcwd())
 
 
 
