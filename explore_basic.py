@@ -40,7 +40,7 @@ print(a<<2 , b<<2) # left shift of a and b by 2
 print(bin(a)[2:])
 
 # input statement
-'''name = str(input ("Enter your full name here : "))
+name = str(input ("Enter your full name here : "))
 try:
     rank = int(input ("Enter your rank of JEE MAINS 2024: "))
     if rank < 40000:
@@ -48,7 +48,7 @@ try:
     else:
         print("Sorry, you can't grab a seat this year. But don't be sad , it is not the end of life. Give yourself one more chance.")
 except ValueError:
-    print(f"INVALID INPUT!! check {name}, again")'''
+    print(f"INVALID INPUT!! check {name}, again")
 
 # bits
 a = 23 #0b100111
@@ -62,7 +62,7 @@ def flip_bits(a,b): # bits needed to convert a to b
     return bin(c).count('1')
 print(flip_bits(2 , 5))
 
-# list methods #mutable
+# list methods # mutable
 list1 = ['cady', '12', 'medical', '98'] # all data types allowed
 print(list1.append('mary')) # returns none but modifies the list
 print(list1.remove("mary")) # returns none but modifies the list
@@ -73,7 +73,7 @@ print(list1.insert(2, "mary"))
 print(len(list1))
 print(list1)
 
-# tuple methods #immutable
+# tuple methods # immutable
 t = (1, 2, {"name" : "cady"} , [4,5,6], (4,5,6),2) # different data types allowed
 print(len(t))
 print(t[2])
@@ -135,7 +135,7 @@ print(dict)
 #       f =(c/5)*9 +32
 #       return f
 # celcius = fahreheit_to_celcius(c)
-# print(celcius, "fahrenheit" )
+ print(celcius, "fahrenheit" )
 
 # factorial of a number
 def factorial(n):
