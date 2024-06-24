@@ -214,21 +214,50 @@ for num in a :
     count+=num
 print(count)
 
-# os module
 import os
 print(os.getcwd())
 print(os.listdir())
-os.mkdir("New")
+if os.path.exists("New"):
+    try:
+        os.chdir("New")
+        print(f"successfully changed directory to : {os.getcwd()}")
+    except Exception as e:
+        print(f"Error changing directory: {e}")
+else:
+    print("directory doesnot exists")
 print(os.getcwd())
-file_exist = os.path.exists("calculator.py")
-print(file_exist)
 print(os.listdir())
-
-os.chdir("New")
-print(os.getcwd())
+home = os.environ.get("HOME")
 
 
+# partition
+print('rose lotus bannana '.partition("lotus"))
 
+class treenode:
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+        self.right = None
+
+node0 = treenode(2)
+node1 = treenode(3)  
+node2 = treenode(1)
+node3 = treenode(5)
+node4 = treenode(3)  
+node5 = treenode(4)
+node6 = treenode(7)
+node7 = treenode(6)  
+node8 = treenode(8)
+
+print(node0.key)
+node0.left = node1
+node1.left = node2
+node0.right = node3
+node3.left  = node4
+node4.right = node5
+tree = node0
+print(tree.left.key)
+print(tree.right.key)
 
 
 
