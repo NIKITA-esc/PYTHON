@@ -1,4 +1,21 @@
-
+# Features
+'''
+File and directory management:
+- os.listdir() list all the files of the given directory
+- os.mkdir() creates the new directory 
+- Create new file if file doesn't exist
+- "a" used to append in a given file
+- "r" used to read the given file 
+- "w" used to overwrite in the file and delete the previous one 
+- "w+" open file for reading and writing both with truncation
+- "r+" open the file for reading and writing both without truncation
+- "a+" 
+- try-except block handles the invalid inputs or errors
+- whileTrue loop continues until "break"
+- main() 
+  main function presents a menu to the users to perform file operations
+  
+'''
 
 import os
 import shutil
